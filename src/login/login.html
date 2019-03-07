@@ -1,0 +1,68 @@
+<div ng-controller="login_ctrl as login" class="background-login">
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger">¡Error!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Debe rellenar el campo <b>{{login.modalField}}</b>.
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-box col-md-4 col-sm-8 col-xs-10">
+        <h5 class="login-label-top">Inicio de Sesión</h5>
+        <form class="no-margin-bottom">
+            <div class="form-group no-margin-bottom">
+                <div class="btn-group float-right marg-bottom-10"> 
+
+                    
+                    <button type="button" class="loginType btn select-btn login-form-item">{{login.user.type}}</button>
+                    <!-- <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button> -->
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" ng-click="login.toggle()">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="custom-dropdown login-dropdown" ng-show="login.toggled">
+                        <ul class="list-group">
+                            <li ng-repeat="type in login.types" ng-click="login.setType(type)" class="list-group-item">{{type}}</li>
+                        </ul>
+                    </div>
+                    <!-- 
+                    <div class="custom-dropdown" ng-show="login.toggled">
+                        <a ng-click="login.setType('V')">V</a>
+                        <a>E</a>
+                        <a>P</a>
+                    </div> -->
+                    <!-- <div class="dropdown-menu login-dropdown">
+                        <a ng-click="login.setType('V')" class="dropdown-item" href="#">V</a>
+                        <a ng-click="login.setType('E')" class="dropdown-item" href="#">E</a>
+                        <a ng-click="login.setType('P')" class="dropdown-item" href="#">P</a>
+                    </div> -->
+                </div>
+                <input ng-model="login.user.username" required="required" type="text" class="form-control login-form-item marg-bottom-10" placeholder="Usuario">
+                <input ng-model="login.user.password" required="required" type="password" class="form-control login-form-item2" placeholder="Contraseña">
+                <div>
+                    <a class="login-forgot" href="#" ng-click="login.alert()"><i>¿Olvidó su contraseña?</i></a>
+                </div>
+                <div class="btn-container">
+                    <button ng-click="login.checkFields()" class="btn-lg btn-primary login-btn">Aceptar</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <div class="logo-image">
+        <img src="../../assets/images/logo_azul.png">
+    </div>
+</div>

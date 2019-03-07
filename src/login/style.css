@@ -1,0 +1,117 @@
+.background-login {
+    background-image: url("../../assets/images/background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login-box {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: Arial;
+}
+
+.login-label-top {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.login-select {
+    height: 36px;
+    border: 1px solid #5bc0de;
+    background-color: #fff !important;
+    padding-left: 15px;
+}
+
+.marg-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.login-form-item {
+    border: 1px solid #5bc0de;
+    border-radius: 0px;
+}
+
+.login-form-item2 {
+    margin-bottom: 6px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.login-forgot {
+    font-size: 17px;
+}
+
+.select-btn {
+    background-color: #fff;
+    color: #495057;
+}
+
+.login-btn {
+    margin-top: 30px;
+    border-style: solid;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0px;
+}
+
+.logo-image {
+    position: absolute;
+    bottom: 30;
+    right: 30;
+}
+
+.login-dropdown {
+    -webkit-transform: none;
+    transform: none !important;
+    margin-top: 36px;
+}
+
+.custom-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.dd-elem {
+    width: 40px;
+}
+
+.list-group-item {
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+}
+
+.loginType {
+    width: 120px;
+}
+
+.modal-footer button {
+    margin: 0 auto;
+}
+
+.modal-content {
+    background-color: #ffffffb0;
+}

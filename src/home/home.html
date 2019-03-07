@@ -1,0 +1,20 @@
+<div ng-controller="home_ctrl as home" class="homeContainer">
+    <div class="container insideHome">
+        <div class="row">
+            <div ng-repeat="data in home.homeData" class="col-sm-12 col-md-6 col-lg-4 dataElement">
+                <div class="card cardElement">
+                    <img src={{data.thumbnailUrl}} class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{data.title}}</h5>
+                        <a href={{data.url}} class="btn btn-primary">¡Go to the Link!</a>
+                        <br>
+                        <small class="elemHour">Hace {{home.getRandomHour()}} horas</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo-image">
+        <img src="../../assets/images/logo_azul.png">
+    </div>
+</div>

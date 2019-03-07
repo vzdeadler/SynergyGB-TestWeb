@@ -1,0 +1,31 @@
+.dataElement {
+    padding: 20px;
+    text-align: center;
+}
+
+.elemHour {
+    color: grey;
+    margin-top: 10px;
+}
+
+.homeContainer {
+    background-image: url("../../assets/images/background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+
+.cardElement {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* .insideHome {
+    overflow: scroll;
+} */
